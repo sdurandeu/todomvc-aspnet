@@ -6,10 +6,12 @@
  * - exposes the model to the template and provides event handlers
  */
 angular.module('todomvc')
-	.controller('TodoCtrl', function TodoCtrl($scope, $routeParams, $filter, store) {
+	.controller('TodoController', ["$scope", "$routeParams", "$filter", "todoStorage", function TodoController($scope, $routeParams, $filter, todoStorage) {
 		'use strict';
 
-		var todos = $scope.todos = store.todos;
+		todoStorage.get();
+
+		var todos = $scope.todos = todoStorage.todos;
 
 		$scope.newTodo = '';
 		$scope.editedTodo = null;
@@ -39,7 +41,7 @@ angular.module('todomvc')
 			}
 
 			$scope.saving = true;
-			store.insert(newTodo)
+		    todoStorage.insert(newTodo)
 				.then(function success() {
 					$scope.newTodo = '';
 				})
@@ -77,7 +79,7 @@ angular.module('todomvc')
 				return;
 			}
 
-			store[todo.title ? 'put' : 'delete'](todo)
+		    todoStorage[todo.title ? 'put' : 'delete'](todo)
 				.then(function success() {}, function error() {
 					todo.title = $scope.originalTodo.title;
 				})
@@ -94,25 +96,25 @@ angular.module('todomvc')
 		};
 
 		$scope.removeTodo = function (todo) {
-			store.delete(todo);
+		    todoStorage.delete(todo);
 		};
 
 		$scope.saveTodo = function (todo) {
-			store.put(todo);
+		    todoStorage.put(todo);
 		};
 
 		$scope.toggleCompleted = function (todo, completed) {
 			if (angular.isDefined(completed)) {
 				todo.completed = completed;
 			}
-			store.put(todo, todos.indexOf(todo))
+		    todoStorage.put(todo, todos.indexOf(todo))
 				.then(function success() {}, function error() {
 					todo.completed = !todo.completed;
 				});
 		};
 
 		$scope.clearCompletedTodos = function () {
-			store.clearCompleted();
+		    todoStorage.clearCompleted();
 		};
 
 		$scope.markAll = function (completed) {
@@ -122,4 +124,4 @@ angular.module('todomvc')
 				}
 			});
 		};
-	});
+	}]);

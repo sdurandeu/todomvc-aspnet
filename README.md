@@ -3,11 +3,13 @@ This sample is based on the TODO MVC Angular.js Sample http://todomvc.com/exampl
 
 ### Frameworks
 The solution is using:
+* Created with Visual Studio 2015
 * ASP.NET MVC + ASP.NET Web API 2
 * LocalDB SQL Database for storing users and lists
 * Angular.js
 * Bootstrap 3
-* Created with Visual Studio 2015
+* Font Awesome
+* Social Buttons for Bootstrap (http://lipis.github.io/bootstrap-social/)
 
 ### How to run the solution
 1. Open TodoApp.sln using Visual Studio 2013/2015.
@@ -21,6 +23,14 @@ The solution is using:
 1. Added Web API as SPA backend.
 1. Remove support for localStorage to simplify sample.
 1. Added 'ng-strict-di' directive and updated code to use inline array annotation.
+1. Configured Facebook authentication
+1. Fixed styles
 
 See https://github.com/johnpapa/angular-styleguide for Style Guidelines.
+
+### TODO
+1. Merge site.css and todomvc-app-css.css and use Bootstrap consistently
+1. Update the login flow to use angular and tokens (not standard MVC views)
+1. Autofocus on the textbox after adding a new TODO
+1. Mobile layouts
 

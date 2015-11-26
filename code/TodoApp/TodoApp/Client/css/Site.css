@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 
@@ -19,6 +19,10 @@
 /* Set padding to display errors that occur during databinding */
 .padding-error {
     padding-top: 20px;
+}
+
+.register-link {
+    line-height: 35px;
 }
 
 @media only screen and (max-width: 767px) {

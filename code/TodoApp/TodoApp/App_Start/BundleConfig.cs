@@ -19,9 +19,11 @@
                 "~/Client/libs/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                 "~/Client/css/bootstrap.css",
+                "~/Client/css/bootstrap.css",
+                "~/Client/css/bootstrap-social.css",
+                "~/Client/css/font-awesome.css",
                  "~/Client/css/todomvc-common.css",
-                 "~/Client/css/todomvc-app-css.css",
+                 "~/Client/css/todomvc-app.css",
                  "~/Client/css/Site.css"));
         }
     }

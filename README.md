@@ -1,11 +1,14 @@
-# ASP.NET + Angular.js TODO Sample
-This sample is based on the TODO MVC Angular.js Sample http://todomvc.com/examples/angularjs/#/ and adds authentication support.
+# ASP.NET + Angular.js TodoMvc Sample
+
+This sample is based on the TODO MVC Angular.js sample http://todomvc.com/examples/angularjs/#/ and the Visual Studio 2015 single-page application template, but adding:
+* An ASP.NET Web API as the backend for the angular app
+* Support for multiple users (including Facebook auth)
 
 ### How to run the solution
-1. Open TodoApp.sln using Visual Studio 2013/2015.
-2. Press **F5** to run it, Entity Framework will create a new empty database for the app (and mdf file under the App_Data folder).
+1. Open **TodoApp.sln** using Visual Studio 2013/2015.
+2. Press **F5** to run it. Entity Framework will create a new empty database for the app (and an `.mdf` file under the `App_Data` folder).
 
-	**Note:** The app was only tested in Chrome.
+**Note:** The app was only tested in Chrome.
 	
 ### Frameworks
 The solution is using:
@@ -33,6 +36,7 @@ See https://github.com/johnpapa/angular-styleguide for Angular style guidelines 
 
 ### TODO
 1. Use Bootstrap consistently.
+1. Fonts are not working when bundling is enabled.
 1. Update the login flow to use angular and tokens (not standard MVC views).
 1. Autofocus on the textbox after adding a new TODO.
 1. Test anf fix mobile responsiveness.

@@ -27,9 +27,9 @@ The solution is using:
 1. Web API: Configured Json formatter as default and removed XML formatter.
 1. Added Web API as single page app backend.
 1. Remove client-side support for localStorage to simplify sample.
-1. Added 'ng-strict-di' directive and updated code to use inline array annotation.
+1. Added `ng-strict-di` directive and updated code to use inline array annotation.
 1. Configured Facebook authentication.
-1. Added [Social Buttons for Bootstrap](http://lipis.github.io/bootstrap-social/) for Login with FB button.
+1. Added [Social Buttons for Bootstrap](http://lipis.github.io/bootstrap-social/) for the FB login button.
 1. Fixed styles to have both bootstrap and TodoMVC styles present in the app.
 
 See https://github.com/johnpapa/angular-styleguide for Angular style guidelines followed.

@@ -1,5 +1,4 @@
-﻿@section SPAViews {
-<ng-view />
+﻿<ng-view />
 
 <script type="text/ng-template" id="todomvc-index.html">
     <section id="todoapp">
@@ -48,15 +47,7 @@
         <p>Double-click to edit a todo</p>
     </footer>
 </script>
-}
 
 @section Scripts{    
-    @Scripts.Render("~/Client/libs/angular.js")
-    @Scripts.Render("~/Client/libs/angular-route.js")
-    @Scripts.Render("~/Client/libs/angular-resource.js")
-    @Scripts.Render("~/Client/app/app.js")
-    @Scripts.Render("~/Client/app/controllers/todoCtrl.js")
-    @Scripts.Render("~/Client/app/services/todoStorage.js")
-    @Scripts.Render("~/Client/app/directives/todoFocus.js")
-    @Scripts.Render("~/Client/app/directives/todoEscape.js")
+    @Scripts.Render("~/bundles/angular-app")
 }

@@ -1,13 +1,12 @@
 ﻿namespace TodoApp.Controllers
 {
-    using System;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.Owin.Security;
     using System.Linq;
     using System.Threading.Tasks;
     using System.Web;
     using System.Web.Mvc;
-    using Microsoft.AspNet.Identity;
-    using Microsoft.AspNet.Identity.Owin;
-    using Microsoft.Owin.Security;
     using TodoApp.Models;
 
     [Authorize]
@@ -98,44 +97,7 @@
             }
             return RedirectToAction("ManageLogins", new { Message = message });
         }
-
-        //
-        // GET: /Manage/AddPhoneNumber
-        public ActionResult AddPhoneNumber()
-        {
-            return View();
-        }
-
-        //
-        // POST: /Manage/EnableTwoFactorAuthentication
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> EnableTwoFactorAuthentication()
-        {
-            await UserManager.SetTwoFactorEnabledAsync(User.Identity.GetUserId(), true);
-            var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
-            if (user != null)
-            {
-                await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-            }
-            return RedirectToAction("Index", "Manage");
-        }
-
-        //
-        // POST: /Manage/DisableTwoFactorAuthentication
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DisableTwoFactorAuthentication()
-        {
-            await UserManager.SetTwoFactorEnabledAsync(User.Identity.GetUserId(), false);
-            var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
-            if (user != null)
-            {
-                await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-            }
-            return RedirectToAction("Index", "Manage");
-        }
-
+       
         //
         // GET: /Manage/ChangePassword
         public ActionResult ChangePassword()

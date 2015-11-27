@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <style>[ng-cloak] { display: none; }
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
     </style>
 </head>
 <body ng-app="todomvc" ng-strict-di>
@@ -31,14 +34,14 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        @RenderSection("SPAViews", required: false)
-        <hr />
+    </div>
+    <hr />
+    <div class="container body-content">
         <footer>
             <p>&copy; @DateTime.Now.Year - My TodoMVC App</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/respond")
     @RenderSection("Scripts", required: false)
 </body>
 </html>

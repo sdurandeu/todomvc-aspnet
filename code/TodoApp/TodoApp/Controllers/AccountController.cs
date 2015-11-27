@@ -1,17 +1,15 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using TodoApp.Models;
-
-namespace TodoApp.Controllers
+﻿namespace TodoApp.Controllers
 {
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.Owin.Security;
+    using System.Linq;
+    using System.Security.Claims;
+    using System.Threading.Tasks;
+    using System.Web;
+    using System.Web.Mvc;
+    using TodoApp.Models;
+
     [Authorize]
     public class AccountController : Controller
     {

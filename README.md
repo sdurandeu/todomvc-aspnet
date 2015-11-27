@@ -36,10 +36,10 @@ See https://github.com/johnpapa/angular-styleguide for Angular style guidelines 
 
 ### TODO
 1. Use Bootstrap consistently.
-1. Fonts are not working when bundling is enabled.
+1. Font awesome is not working when ASP.NET bundling is enabled.
 1. Update the login flow to use angular and tokens (not standard MVC views).
 1. Autofocus on the textbox after adding a new TODO.
-1. Test anf fix mobile responsiveness.
+1. Test and fix mobile responsiveness.
 1. Test in all browsers.
 1. Add unit tests.
 

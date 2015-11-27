@@ -1,6 +1,6 @@
 # ASP.NET + Angular.js TodoMvc Sample
 
-This sample is based on the TODO MVC Angular.js sample http://todomvc.com/examples/angularjs/#/ and the Visual Studio 2015 single-page application template, but adding:
+This sample is based on the [TODO MVC Angular.js sample](http://todomvc.com/examples/angularjs/#/) and the Visual Studio 2015 single-page application template, but adding:
 * An ASP.NET Web API as the backend for the angular app
 * Support for multiple users (including Facebook auth)
 
@@ -29,7 +29,7 @@ The solution is using:
 1. Remove client-side support for localStorage to simplify sample.
 1. Added 'ng-strict-di' directive and updated code to use inline array annotation.
 1. Configured Facebook authentication.
-1. Added Social Buttons for Bootstrap (http://lipis.github.io/bootstrap-social/) for Login with FB button.
+1. Added [Social Buttons for Bootstrap](http://lipis.github.io/bootstrap-social/) for Login with FB button.
 1. Fixed styles to have both bootstrap and TodoMVC styles present in the app.
 
 See https://github.com/johnpapa/angular-styleguide for Angular style guidelines followed.

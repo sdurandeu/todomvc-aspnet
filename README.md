@@ -27,9 +27,9 @@ The solution is using:
 1. Web API: Configured Json formatter as default and removed XML formatter.
 1. Added Web API as single page app backend.
 1. Remove client-side support for localStorage to simplify sample.
-1. Added 'ng-strict-di' directive and updated code to use inline array annotation.
+1. Added `ng-strict-di` directive and updated code to use inline array annotation.
 1. Configured Facebook authentication.
-1. Added [Social Buttons for Bootstrap](http://lipis.github.io/bootstrap-social/) for Login with FB button.
+1. Added [Social Buttons for Bootstrap](http://lipis.github.io/bootstrap-social/) for the FB login button.
 1. Fixed styles to have both bootstrap and TodoMVC styles present in the app.
 1. Added a test project for testing the Web API by mocking EF DbSet and ASP.NET Identity ApplicationUserManager class.
 
@@ -37,10 +37,10 @@ See https://github.com/johnpapa/angular-styleguide for Angular style guidelines 
 
 ### TODO
 1. Use Bootstrap consistently.
-1. Fonts are not working when bundling is enabled.
+1. Font awesome is not working when ASP.NET bundling is enabled.
 1. Update the login flow to use angular and tokens (not standard MVC views).
 1. Autofocus on the textbox after adding a new TODO.
-1. Test anf fix mobile responsiveness.
+1. Test and fix mobile responsiveness.
 1. Test in all browsers.
 1. Add more unit tests.
 

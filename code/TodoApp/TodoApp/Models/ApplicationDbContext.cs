@@ -10,7 +10,7 @@
         {
         }
 
-        public DbSet<ToDo> ToDoes { get; set; }
+        public virtual DbSet<ToDo> ToDos { get; set; } // marking as virtual allows mocking override
 
         public static ApplicationDbContext Create()
         {

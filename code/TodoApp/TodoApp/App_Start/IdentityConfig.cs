@@ -9,7 +9,6 @@
     using System.Threading.Tasks;
     using TodoApp.Models;
 
-    // Configure the application user manager which is used in this application.
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
@@ -38,7 +37,6 @@
         }
     }
 
-    // Configure the application sign-in manager which is used in this application.  
     public class ApplicationSignInManager : SignInManager<ApplicationUser, string>
     {
         public ApplicationSignInManager(ApplicationUserManager userManager, IAuthenticationManager authenticationManager) :

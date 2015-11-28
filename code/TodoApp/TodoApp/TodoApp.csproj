@@ -332,6 +332,9 @@
     <Content Include="Client\fonts\fontawesome-webfont.woff2" />
     <Content Include="Client\fonts\FontAwesome.otf" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\todomvc-sample.pubxml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

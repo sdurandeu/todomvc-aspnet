@@ -31,6 +31,7 @@ The solution is using:
 1. Configured Facebook authentication.
 1. Added [Social Buttons for Bootstrap](http://lipis.github.io/bootstrap-social/) for Login with FB button.
 1. Fixed styles to have both bootstrap and TodoMVC styles present in the app.
+1. Added a test project for testing the Web API by mocking EF DbSet and ASP.NET Identity ApplicationUserManager class.
 
 See https://github.com/johnpapa/angular-styleguide for Angular style guidelines followed.
 
@@ -41,5 +42,5 @@ See https://github.com/johnpapa/angular-styleguide for Angular style guidelines 
 1. Autofocus on the textbox after adding a new TODO.
 1. Test anf fix mobile responsiveness.
 1. Test in all browsers.
-1. Add unit tests.
+1. Add more unit tests.
 
